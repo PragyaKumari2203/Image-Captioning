@@ -1,0 +1,19 @@
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes gradientPulse {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+.gradient-flow {
+  background-size: 200% 200%;
+  animation: gradientPulse 8s ease infinite;
+}
